@@ -1,0 +1,116 @@
+:root{
+  --bg: #f6f7fb;
+  --card: #ffffff;
+  --ink: #1f2937;
+  --muted: #6b7280;
+  --main: #ff8a3d;
+  --main-2: #ffb37a;
+  --second: #7c3aed;
+  --third: #0ea5e9;
+  --radius: 1.25rem;
+}
+
+*{ box-sizing: border-box; }
+
+body.bg-soft{
+  background: radial-gradient(900px 380px at 50% 0%, rgba(124,58,237,.12), transparent 60%),
+              radial-gradient(900px 380px at 50% 0%, rgba(14,165,233,.10), transparent 60%),
+              var(--bg);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.card-soft{
+  border: 1px solid rgba(0,0,0,.06);
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, rgba(255,255,255,1), rgba(255,255,255,.95));
+}
+
+.logo-circle{
+  width: 54px;
+  height: 54px;
+  border-radius: 999px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size: 22px;
+  background: linear-gradient(135deg, rgba(255,138,61,.25), rgba(124,58,237,.18));
+  border: 1px solid rgba(0,0,0,.06);
+}
+
+.title-fun{
+  letter-spacing: .2px;
+}
+
+.note{
+  font-size: .85rem;
+  color: var(--muted);
+}
+
+.btn-main{
+  background: linear-gradient(135deg, var(--main), var(--main-2));
+  border: none;
+  color: #111827;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: .65rem 1rem;
+}
+
+.btn-main:hover{ filter: brightness(0.98); }
+
+.btn-second{
+  background: linear-gradient(135deg, rgba(124,58,237,1), rgba(124,58,237,.7));
+  border: none;
+  color: white;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: .65rem 1rem;
+}
+.btn-second:hover{ filter: brightness(1.02); }
+
+.btn-third{
+  background: linear-gradient(135deg, rgba(14,165,233,1), rgba(14,165,233,.72));
+  border: none;
+  color: white;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: .65rem 1rem;
+}
+.btn-third:hover{ filter: brightness(1.02); }
+
+.balance-box{
+  border-radius: var(--radius);
+  padding: 1rem;
+  background: linear-gradient(135deg, rgba(255,138,61,.10), rgba(14,165,233,.08));
+  border: 1px solid rgba(0,0,0,.05);
+}
+
+.mini-balance{
+  display:flex;
+  align-items:center;
+  gap:.5rem;
+  padding:.5rem .75rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,.75);
+  border: 1px solid rgba(0,0,0,.06);
+}
+
+.contact-item{
+  cursor: pointer;
+}
+
+.contact-item:hover{
+  background: rgba(14,165,233,.05);
+}
+
+.form-control, .form-select{
+  border-radius: 1rem;
+}
+
+hr{
+  border-color: rgba(0,0,0,.08);
+}
+
+@media (max-width: 575px){
+  .card-soft{ padding: 1.25rem !important; }
+}
