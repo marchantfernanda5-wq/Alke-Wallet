@@ -49,9 +49,9 @@ function inicializarWalletSiHaceFalta() {
   }
   if (!localStorage.getItem(storageWalletKeys.agenda)) {
     guardarStorageJson(storageWalletKeys.agenda, [
-      { name: "Ana", alias: "ana.rosa", cbu: "1234567890123456789012" },
-      { name: "Juan", alias: "juan.celeste", cbu: "9999888877776666555544" },
-      { name: "Mamá", alias: "mama.casa", cbu: "1111222233334444555566" },
+      { name: "Martin Heidegger", alias: "Heidi", cbu: "1234567890123456789012" },
+      { name: "Teun Van Dijk", alias: "Analitico", cbu: "9999888877776666555544" },
+      { name: "Gabriela Mistral", alias: "gabi", cbu: "1111222233334444555566" },
     ]);
   }
 }
@@ -422,13 +422,6 @@ function configurarMovimientos() {
     renderizarMovimientos(filtroTipo);
   });
 
-  $("#btnBorrarMovimientos").on("click", function () {
-    const confirmarBorrado = confirm("¿Seguro que quieres borrar los movimientos? (solo demo)");
-    if (!confirmarBorrado) return;
-    guardarStorageJson(storageWalletKeys.movimientos, []);
-    mostrarAlertaBootstrap("Movimientos borrados del localStorage.", "info");
-    window.location.reload();
-  });
 }
 
 $(function () {
