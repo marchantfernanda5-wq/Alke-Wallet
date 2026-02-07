@@ -1,4 +1,4 @@
-# Alke Wallet - Repositorio de Proyecto
+Alke Wallet 
 
 Este repositorio contiene el código fuente de la aplicación **Alke Wallet**, una billetera digital interactiva desarrollada con tecnologías web estándar.
 
